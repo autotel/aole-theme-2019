@@ -28,45 +28,46 @@ in the history of this theme there is:
 The structure of the HTML is the same on every page:
 
 ```
-┌────────────────────────────────────────┐   
-│   Client-body                          │   
-│                                        │   
-│    ░░░░░░░main-container ░░░░░░░░░░    │   --> header.php
-│   ┌────────────────────────────────┐   │   
-│   │  section-container section-<name>-container  
-│   ┌────────────────────────────────┐   │   
-│   │  item-<name>-container         │   │   
-│   │                                │   │   (example of a single-content
-│   │  ..depending on the content    │   │   section)
-│   │  type, this receives different │   │   
-│   │  properties                    │   │   
-│   └────────────────────────────────┘   │   
-│   │  /end section-container        │   │   
-│   └────────────────────────────────┘   │   
-│    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    │   
-│   ┌────────────────────────────────┐   │   
-│   │  section-container section-<name>-container     
-│   ┌────────────────────────────────┐   │   
-│   │  items-wrapper items-<name>-wrapper   (example of a section
-│   │  ┌───────┐ ┌───────┐ ┌───────┐ │   │   containing a list of
-│   │  │item-  │ │item-  │ │item-  │ │   │   elements, such as an index)
-│   │  │<name>-│ │<name>-│ │<name>-│ │   │   
-│   │  │cont.. │ │cont.. │ │cont.. │ │   │   
-│   │  └───────┘ └───────┘ └───────┘ │   │   
-│   └────────────────────────────────┘   │   
-│   │  /end section-container        │   │   
-│   └────────────────────────────────┘   │   
-│    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    │   
-│   ┌────────────────────────────────┐   │   --> footer.php  
-│   │  section-container             │   │   
-│   ┌────────────────────────────────┐   │   
-│   │  item-footer-container         │   │     
-│   └────────────────────────────────┘   │   
-│   │  /end section-container        │   │   
-│   └────────────────────────────────┘   │   
-│    ░░░/end main-container░░░░░░░░░░    │
-│                                        │   
-└────────────────────────────────────────┘   
+┌───────────────────────────────────────────┐   
+│   HTML                                    │   
+│                                           │   
+│ ░░░░░░░░░.main-container ░░░░░░░░░░░░░░░░ │   --> header.php
+│ ░░┌────────────────────────────────────┐░ │   
+│ ░░│  .section-container                │░ │
+│ ░░│  .section-<name>-container         │░ │
+│ ░░│ ┌────────────────────────────────┐ │░ │   
+│ ░░│ │  .item-container               │ │░ │   
+│ ░░│ │  .item-<name>-container        │ │░ │   (example of a single-content
+│ ░░│ │  ..depending on the content    │ │░ │   section)
+│ ░░│ │  type, different classes may   │ │░ │
+│ ░░│ │   be present.                  │ │░ │   
+│ ░░│ └────────────────────────────────┘ │░ │   
+│ ░░└────────────────────────────────────┘░ │   
+│ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │  
+│ ░░┌────────────────────────────────────┐░ │    
+│ ░░│  .section-container                │░ │
+│ ░░│  .section-<name>-container         │░ │
+│ ░░│ ┌────────────────────────────────┐ │░ │   
+│ ░░│ │  .items-wrapper                │ │░ │
+│ ░░│ │  .items-<name>-wrapper         │ │░ │   (example of a section
+│ ░░│ │  ┌───────┐ ┌───────┐ ┌───────┐ │ │░ │   containing a list of
+│ ░░│ │  │.item- │ │.item- │ │.item- │ │ │░ │   elements, such as pilots)
+│ ░░│ │  │<name>-│ │<name>-│ │<name>-│ │ │░ │   
+│ ░░│ │  │cont.. │ │cont.. │ │cont.. │ │ │░ │   
+│ ░░│ │  └───────┘ └───────┘ └───────┘ │ │░ │   
+│ ░░│ └────────────────────────────────┘ │░ │   
+│ ░░└────────────────────────────────────┘░ │   
+│ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │   
+│ ░░┌────────────────────────────────────┐░ │   --> footer.php  
+│ ░░│  .section-container                │░ │   
+│ ░░│  .section-footer-container         │░ │   
+│ ░░│ ┌────────────────────────────────┐ │░ │   
+│ ░░│ │  item-footer-container         │ │░ │     
+│ ░░│ └────────────────────────────────┘ │░ │   
+│ ░░└────────────────────────────────────┘░ │   
+│ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+│                                           │   
+└───────────────────────────────────────────┘   
 ```
 
 ### PHP templates

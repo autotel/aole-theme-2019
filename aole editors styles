@@ -1,0 +1,34 @@
+<h1>Classes</h1>
+<div class="blue-framed">
+  <ul>
+  <li>class=button: <a class="button" href="#">button class</a></li>
+  <li>class="button white": <a class="button white" href="#">button white class</a></li>
+  <li>class="button-list": <a class="button-list " href="#">button-list class + <span class="fa-long-arrow-right"></span></a></li>
+  <li>class="ical-export-button" <a class="ical-export-button" href="#">ical export button class</a></li>
+  <li>class="disappear" <a class="disappear" href="#">disappear class</a></li>
+  <li>class="tag" <a class="tag" href="#">tag class</a></li>
+  <li>class="alignleft" <a class="alignleft" href="#">alignleft class</a></li>
+  <li>class="alignright" <a class="alignright" href="#">alignright class</a></li>
+  <li>class="white-framed" <img class="white-framed" src="/wp-content/uploads/sites/11/2019/01/homepage-3-e1548930164791.jpg" />white-framed class</li>
+  <li></li>
+  <li></li>
+
+  </ul>
+</div>
+<h1>Tags</h1>
+<div class="blue-framed">
+  HR:<hr>
+  <h1>h1</h1>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <h4>h4</h4>
+  <h5>h5</h5>
+  <h6>h6</h6>
+  <blockquote>Blockquote</blockquote>
+  <a href="">a</a>
+</div>
+<h1>Bootstrap</h1>
+<div>
+  <h2>Font-awesome icons</h2>
+  <span class=""></span>
+</div>

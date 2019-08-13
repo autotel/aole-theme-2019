@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         });
         $el.on('mouseup',function(e){
           if(e.button!=0) return;
-          e.stopPropagation();
+          // e.stopPropagation();
           e.preventDefault();
           if(!drag.annotation) return;
           // console.log(e.originalEvent);
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
           $rmb.on('mouseup',function(e){
             if(e.button!=0) return;
-            e.stopPropagation();
+            // e.stopPropagation();
             self.remove();
           });
           $frame.on('mousedown',function(e){
@@ -188,8 +188,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         this.get=function(){
           var ret={}
           var offset=$frame.offset();
-          ret.left=offset.left;
-          ret.top=offset.top;
+          var moffset=$frame.parent().offset();
+
+          ret.left=offset.left-moffset.left;
+          ret.top=offset.top-moffset.top;
           ret.width=$frame.css('width');
           ret.height=$frame.css('height');
           ret.content=$content.html();

@@ -1,8 +1,5 @@
-/**
-this file contains the properties of some of the list items such as
-individual posts in a posts list, and their wrappers.
 
-*/
+// this file contains the properties of very specific items that appear in some different pages
 
 
 
@@ -29,6 +26,7 @@ individual posts in a posts list, and their wrappers.
   .item-tags-container{
       margin-top:2em;
   }
+
   .item-post-thumbnail-container {
     margin-top:2em;
   }
@@ -39,7 +37,6 @@ individual posts in a posts list, and their wrappers.
       position:sticky;
       top:124px;
   }
-
 
   .section-footer-container {
       $is-full-width:false;
@@ -83,10 +80,6 @@ individual posts in a posts list, and their wrappers.
   .section-post-container{
     .item-post-content-container{
         @include side-thing-counterpart();
-
-        // img{
-        //     max-width: 100%;
-        // }
     }
   }
 

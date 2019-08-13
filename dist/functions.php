@@ -733,9 +733,21 @@ function my_custom_dashboard_widgets() {
 }
 
 function custom_dashboard_help() {
-    echo '<p>Welcome to the Aalto Online Learning 2017 theme! Need help? Check out the documentation on how to use this WordPress theme at:
-    <br><br>
-    <a href="https://aalto-online-learning.github.io/aole2017-wordpress-documentation/">https://aalto-online-learning.github.io/aole2017-wordpress-documentation/</a>
+    echo '<p>Need help? find these help files:
+    <ul>
+      <li>
+        <b>Original guide:</b>
+        <a href="https://aalto-online-learning.github.io/aole2017-wordpress-documentation/">
+          https://aalto-online-learning.github.io/aole2017-wordpress-documentation/
+        </a>
+      </li>
+      <li>
+        <b>New guide:</b>
+        <a href="https://onlinelearning.aalto.fi/wp-content/Aole2019-documentation">
+          https://onlinelearning.aalto.fi/wp-content/Aole2019-documentation
+        </a>
+      </li>
+    </ul>
     <br><br>
     You\'ll find answer to questions such as:
     <ul>
