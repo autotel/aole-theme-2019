@@ -66,7 +66,10 @@ this is the context where this part should be invoked:
 
   			<a class="item-paragraph-container" href="<?php echo get_the_permalink($pilot->ID);?>">
   				<div class="post-image-container">
-  					<img src="<?php echo get_post_thumbnail_url_or_fallback($pilot->ID, 'medium', 'pilot'); ?>" />
+            <?php
+            $img=get_post_thumbnail_url_or_fallback($pilot->ID, 'medium', 'pilot');
+            ?>
+            <img src="<?php echo $img['src']?>" alt="<?php echo $img['alt']?>">
   				</div>
   				<div class="post-title-container">
   					<?php

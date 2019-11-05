@@ -72,9 +72,12 @@ get_header(); ?>
            ?>
        </div>
        <?php if(has_post_thumbnail()){ ?>
-           <div <?php post_class('item-post-thumbnail-container')?>>
-                   <img src="<?php the_post_thumbnail_url(); ?>" class="post-thumbnail"/>
-           </div>
+        <div <?php post_class('item-post-thumbnail-container')?>>
+          <?php
+            $img=get_post_thumbnail_url_or_fallback(get_the_ID(),"full", 'pilot');
+          ?>
+          <img src="<?php echo $img['src']?>" alt="<?php echo $img['alt']?>" class="post-thumbnail"/>
+        </div>
        <?php } ?>
    </div>
    <div class="section-container section-post-container">

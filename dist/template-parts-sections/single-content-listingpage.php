@@ -39,7 +39,10 @@ console.log(vars);
     <div class="section-container section-post-container" role="main">
         <?php if(has_post_thumbnail()){ ?>
             <div <?php post_class('item-post-thumbnail-container')?>>
-                    <img src="<?php the_post_thumbnail_url("large"); ?>" class="post-thumbnail"/>
+                <?php
+                    $img=get_post_thumbnail_url_or_fallback(get_the_ID(),"large", 'pilot');
+                ?>
+                <img src="<?php echo $img['src']?>" alt="<?php echo $img['alt']?>" class="post-thumbnail"/>
             </div>
         <?php } ?>
         <div class="item-post-content-container">

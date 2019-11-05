@@ -26,7 +26,10 @@ include_once locate_template('./includes/date-string-remove-seconds.php');
         <a href="<?php echo $event->guid ?>">
             <div class="item-container item-events-container">
                 <div class="item-image-container">
-                        <img src="<?php echo get_post_thumbnail_url_or_fallback($event->post_id, 'event-thumbnail', 'event');?>">
+                    <?php
+                        $img=get_post_thumbnail_url_or_fallback($event->post_id, 'event-thumbnail', 'event');
+                    ?>
+                    <img src="<?php echo $img['src']?>" alt="<?php echo $img['alt']?>">
                 </div>
                 <?php
                     //date string to date object

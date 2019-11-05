@@ -31,8 +31,10 @@ this is the context where this part should be invoked:
 			<a href="<?php echo get_permalink(); ?>">
 				<div class="item-container item-news-container">
 					<div class="item-image-container">
-						<img src="<?php echo get_post_thumbnail_url_or_fallback($post->post_id, 'event-thumbnail', 'news_item');?>">
-
+						<?php
+							$img=get_post_thumbnail_url_or_fallback($post->post_id, 'event-thumbnail', 'news_item');
+						?>
+						<img src="<?php echo $img['src']?>" alt="<?php echo $img['alt']?>">
 					</div>
 					<div class="item-title-container">
 						<?php the_title(); ?>
