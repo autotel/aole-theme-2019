@@ -33,6 +33,6 @@
   "private": true,
   "devDependencies": {
     "autoprefixer": "^9.3.1",
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.4.1"
   }
 }
